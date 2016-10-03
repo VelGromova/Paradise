@@ -1,0 +1,29 @@
+// fonts
+@font-face {
+  font-family: 'san-francisco display';
+  src: url('../fonts/sanfranciscodisplay-ultralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// import basic styles
+@import "variables.scss";
+@import "mixins.scss";
+@import "base.scss";
+@import "layout.scss";
+
+// import modules
+@import "modules/arrows.scss";
+@import "modules/headings.scss";
+@import "modules/labels.scss";
+@import "modules/buttons.scss";
+@import "modules/icons.scss";
+@import "modules/bubbles.scss";
+
+// import sections
+@import "sections/headers.scss";
+@import "sections/slider.scss";
+@import "sections/features.scss";
+@import "sections/preview-slider.scss";
+@import "sections/latest-news.scss";
+@import "sections/footer.scss";

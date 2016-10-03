@@ -1,0 +1,93 @@
+.slider {
+  height: 693px;
+  background-image:url("../images/air_max.png");
+  position: relative;
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 423px;
+    height: 240px;
+    top: 297px;
+    left: 118px;
+    .product-holder {
+      width: 380px;
+      height: 180px;
+      background: $white;
+      .brand-choice {
+        display: flex;
+        justify-content: space-between;
+        .brand-name {
+        @extend .brand-name-v1;
+        margin: 20.5px 0 0 30px;
+        }
+        .slider-indicator {
+          display: inline-flex;
+          margin: 25.5px 44px 0 0;
+        .ind {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: $light-grey;
+          margin-left: 10px;
+          }
+          span .ind {
+            background: $acid-green;
+            }
+          }
+        }
+        .product-header h1 {
+          font-size: 40px;
+          color: $black;
+          margin: 19px 120px 0 30px;
+          }
+    }
+
+    .item-arrows {
+      .arrow-right {
+        position: relative;
+        height: 42px;
+        width: 43px;
+        background: $dirty-white;
+        border-bottom: 1px solid rgba(0,0,0,0.10);
+          .item-arrow-right {
+            @extend .arw-position;
+            @extend .arw-vert;
+            border-left: 5px solid $black;
+          }
+        }
+      }
+
+      .arrow-left {
+        position: relative;
+        align-self: center;
+        height: 42px;
+        width: 43px;
+        background: $dirty-white;
+          .item-arrow-left {
+            @extend .arw-position;
+            @extend .arw-vert;
+            border-right: 5px solid $black;
+        }
+      }
+
+      .product-details {
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        height: 60px;
+        background: $black;
+        align-items: center;
+        padding-left: 38px;
+        a {
+          font-size: 12px;
+          color: $acid-green;
+        }
+      }
+      .product-details-arrow {
+        @extend .arw-vert;
+        padding-right: 23.5px;
+        border-left: 5px solid $acid-green;
+      }
+  }
+}

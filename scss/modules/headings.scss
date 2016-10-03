@@ -1,0 +1,33 @@
+.brand-name {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.brand-name-v1 {
+  @extend .brand-name;
+  color: $grey;
+}
+
+.brand-name-v2 {
+  @extend .brand-name;
+  color: $acid-green;
+}
+
+.title-capitalize {
+  font-size: 18px;
+  color: $black;
+  text-transform: capitalize;
+}
+
+.small-descriptions {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  color: $black;
+}
+
+.huge-header {
+  font-size: 60px;
+  text-align: center;
+}

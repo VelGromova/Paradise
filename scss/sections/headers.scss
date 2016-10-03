@@ -1,0 +1,121 @@
+// subheader
+
+.subheader {
+  display: flex;
+  width: 100%;
+  height: 37px;
+  background-color: black;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  .login {
+    padding-left: 30px;
+    a {
+      font-size: 10px;
+      color: $white;
+      margin-left: 9px;
+    }
+    span a {
+      margin-left: 0;
+    }
+}
+  .purchasing-items {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 33px;
+      .icon-bucket {
+        @extend .icon-bucket-v1;
+        margin-right: 9px;
+      }
+      .item-quantity {
+        margin-right: 8px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        font-size: 10px;
+        color: $black;
+        line-height: 17px;
+        text-align: center;
+        background: $acid-green;
+      }
+
+      a {
+        font-size: 10px;
+        color: $white;
+      }
+    }
+}
+
+.icon-bucket-path {
+  fill: $white;
+}
+
+// main header
+
+.main-header {
+  height: 80px;
+  background-color: $acid-green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    margin-left: 33px;
+    h1 {
+      font-size: 25px;
+      color: $black;
+      text-decoration: line-through;
+    }
+    h6 {
+      opacity: 0.41;
+      font-size: 9px;
+      color: $black;
+      text-transform: capitalize;
+    }
+  }
+
+  .navsearch {
+    display: inline-flex;
+      input[type=search] {
+        position: relative;
+        padding-left: 15px;
+        background: rgba(0,0,0,0.10);
+        border-radius: 3px;
+        height: 40px;
+        width: 282px;
+        border: none;
+        margin-right: 28px;
+        font-size: 20px;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type=image] {
+        position: absolute;
+        top: 65px;
+        right: 40px;
+      }
+  }
+
+  .navbar {
+    display: inline-flex;
+    align-items: center;
+    ul {
+      li {
+        display: inline-flex;
+        margin-right: 50px;
+        position: relative;
+        .arrow-down {
+          @extend .arw-horiz;
+          position: absolute;
+          left: 52px;
+          top: 5px;
+          border-top: 5px solid #000;
+        }
+        a {
+          font-size: 12px;
+          color: $black;
+        }
+      }
+    }
+  }
+}

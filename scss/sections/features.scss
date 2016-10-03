@@ -1,0 +1,199 @@
+.feature-products {
+  h3 {
+    font-size: 28px;
+    color: $black;
+    text-transform: capitalize;
+    padding: 73px 0 46px 0;
+  }
+}
+
+.feature-items {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    .small-blocks {
+      width: 48.6%;
+      display: inline-flex;
+      flex-wrap: wrap;
+        .block-x2 {
+          display: inline-flex;
+          // flex-wrap: wrap;
+          width: 506px;
+          height: 308px;
+          background: $white;
+          margin: 0 0 34px 0;
+          .right-block {
+            .price-holder {
+              @extend .price-label;
+              margin: 21px 0;
+            }
+          }
+          .left-block {
+            width: 175px;
+             .brand-name {
+              @extend .brand-name-v1;
+              margin: 37px 0 13px;
+            }
+              .collection {
+              @extend .title-capitalize;
+              font-size: 20px;
+              margin: 13px 0 14.5px;
+
+            }
+              .description {
+                @extend .small-descriptions;
+                line-height: 15px;
+              }
+              .btn-purchase {
+                @extend .btn-labeled;
+                margin-top: 13px;
+              }
+            }
+          }
+
+        .block-x1 {
+          position: relative;
+          display: flex;
+          flex-flow: column;
+          width: 47%;
+          height: 308px;
+          background: $white;
+          margin: 0 29px 27px 0;
+          .label {
+            @extend .brand-name-v1;
+            display: block;
+            position: absolute;
+            top: 17px;
+            left: 66px;
+            background-color: $white;
+            border-radius: 40px;
+            text-align: center;
+            padding: 4px 12px 5px;
+          }
+          .collection {
+            @extend .title-capitalize;
+            align-self: center;
+            margin: 16px 0 11px;
+          }
+          .btn-purchase {
+            @extend .btn-labeled;
+          }
+        }
+        .block-x1v2 {
+          margin-right: 0;
+          background: url("../images/size-vans.png") no-repeat center, #E5EAED;
+          .price-holder {
+            @extend .price-label;
+            margin-top: 17px;
+        }
+          .collection {
+            @extend .title-capitalize;
+            margin-top: 195px;
+          }
+        }
+      }
+
+      .block-x4 {
+        width: 48.6%;
+        height: 651px;
+        background: url("../images/photo-girl.png") no-repeat center;
+        position: relative;
+        .price-holder {
+          @extend .price-label;
+          margin-top: 21px;
+        }
+        .box-info {
+          padding-top: 22.5px;
+          @extend .brand-name-v1;
+          position: absolute;
+          width: 100%;
+          height: 155.5px;
+          background-color: rgba($black, 0.5);
+          bottom: 0;
+          .label {
+            margin: 0 0 10px 34px;
+          }
+          .box-info--text {
+            margin-left: 34px;
+            color: $white;
+            h1 {
+              margin: 2px 0 7px;
+              font-size: 30px;
+            }
+            p {
+              margin-bottom: 25px;
+              width: 440px;
+            }
+            .btn-purchase {
+              @extend .btn-labeled;
+            }
+          }
+        }
+      }
+
+      .block-x8 {
+        position: relative;
+        width: 100%;
+        height: 584.5px;
+        background: $white;
+        .brand-name {
+          @extend .brand-name-v2;
+          position: absolute;
+          top: 140px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block;
+          width: 98px;
+          padding: 3px 0 5px;
+          background-color: #1B1B1B;
+          border-radius: 40px;
+          text-align: center;
+        }
+        .main-heading {
+          @extend .huge-header;
+          color: $acid-green;
+          position: absolute;
+          top: 210px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90.1%;
+        }
+        .box-offers {
+          position: absolute;
+          height: 231px;
+          width: 100%;
+          background-color: rgba($white, 0.5);
+          bottom: 0;
+          display: inline-flex;
+          justify-content: space-around;
+          align-items: center;
+          .model {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .model-pic {
+              position: relative;
+              z-index: 0;
+              width: 236px;
+              .price-holder {
+                @extend .price-label;
+                padding-left: 65px;
+                position: absolute;
+                top: 13px;
+                right: 2px;
+                z-index: -1;
+              }
+            }
+            .collection {
+              @extend .title-capitalize;
+              align-self: center;
+              margin: 16px 0 11px;
+            }
+            .btn-purchase {
+              @extend .btn-labeled;
+            }
+          }
+        }
+      }
+    }

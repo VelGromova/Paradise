@@ -1,0 +1,28 @@
+.price-label {
+  @extend .price-text;
+  width: 56px;
+  height: 23px;
+  background-color: $acid-green;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.price-text {
+  h6 {
+    font-size: 14px;
+    color: $black;
+    text-align: center;
+    padding-top: 2px;
+  }
+}
+
+.category {
+  position: absolute;
+  top: 21px;
+  left: 1px;
+  font-size: 14px;
+  color: $white;
+  padding: 2.5px 25px 2.5px 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

@@ -1,0 +1,55 @@
+
+// shopping button
+.btn-labeled {
+  @extend .btn-img;
+  @extend .btn-link;
+  display: inline-flex;
+  align-self: center;
+  width: 114px;
+  height: 25px;
+  border: {
+    width: 1px;
+    style: solid;
+    radius: 15px;
+  }
+}
+
+.btn-img {
+  img {
+    height: 12px;
+    width: 12px;
+    border-right: {
+      width: 1px;
+      style: solid;
+    }
+    padding: 6.5px 7.5px 6.5px 9.5px;
+  }
+}
+
+.btn-link {
+  a {
+    font-size: 10px;
+    text-transform: capitalize;
+    margin: 6px auto;
+  }
+}
+
+.btn-v1 {
+  border-color: $dark-grey;
+  img {
+    border-right-color: $dark-grey;
+  }
+  a {
+    color: $black;
+  }
+}
+
+.btn-v2 {
+  border-color: $white;
+  img {
+    border-right-color: $white;
+  }
+  a {
+    color: $white;
+  }
+}
